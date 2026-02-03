@@ -1,4 +1,5 @@
 import postgres from 'postgres';
+
 import {
   CustomerField,
   CustomersTableType,
@@ -84,7 +85,6 @@ export async function fetchCardData() {
     throw new Error('Failed to fetch card data.');
   }
 }
-
 const ITEMS_PER_PAGE = 6;
 export async function fetchFilteredInvoices(
   query: string,
